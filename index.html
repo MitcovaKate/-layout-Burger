@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+    <title>Burger MENU</title>
+</head>
+<body> 
+    <header>
+    <nav class="navbar navbar-dark bg-dark navbar-expand position-fixed">
+        <div class="container ">
+            <a class="navbar-brand" href="#"><img src="logo.png" alt=""></i></a>
+            
+              <div class="collapse navbar-collapse justify-content-between" id="main-navigation">
+        <ul class="navbar-nav mx-lg-5">
+            <li class="nav-item">
+                <div class="dropdown"><a class="btn btn-secondary active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="">Home</a>
+                <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">Action</a></li>
+                       <li><a class="dropdown-item" href="#">Another action</a></li>
+                       <li><a class="dropdown-item" href="#">Something else here</a></li>
+                     </ul> 
+                    
+                   </div>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown"><a class="btn btn-secondary active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="">Pages</a>
+                    <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="#">Action</a></li>
+                           <li><a class="dropdown-item" href="#">Another action</a></li>
+                           <li><a class="dropdown-item" href="#">Something else here</a></li>
+                         </ul> 
+                        </div>
+                    </li>
+            <li class="nav-item">
+                <div class="dropdown"><a class="btn btn-secondary active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="">Block</a>
+                    <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="#">Action</a></li>
+                           <li><a class="dropdown-item" href="#">Another action</a></li>
+                           <li><a class="dropdown-item" href="#">Something else here</a></li>
+                         </ul> 
+                        </div>
+            </li>
+            <li class="nav-item"><div class="dropdown"><a class="btn btn-secondary active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="">Shop</a>
+                <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">Action</a></li>
+                       <li><a class="dropdown-item" href="#">Another action</a></li>
+                       <li><a class="dropdown-item" href="#">Something else here</a></li>
+                     </ul> 
+                     </div>
+                </li>
+            <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
+        </ul>
+    
+         <ul class="navbar-nav ">
+              <li class="nav-item item1"><a href="" class="nav-link"><i class="fa-solid fa-bag-shopping fs-3"></i><span class="badge bg-danger rounded-circle">0</span></a></li>
+              <li class="nav-item"><a href="" class="nav-link"><i class="fa-solid fa-magnifying-glass fs-3"></i></a></li>
+              <li class="nav-item "><a href="" class="nav-link"><i class="fa-solid fa-sliders fs-3"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <div class="container-fluid nav-container bg-warning px-lg-5 py-lg-5 " id="link-start">
+        <div class="row">
+            <div class="col align-self-center">
+                <p class="fs-4 text-white">ABOUT US</p>
+                <h1 class="text-white">UNFORGETTABLE BURGERS,<br>UNFORGETTABLE MEMORIES</h1>
+            
+            <div class="food-icons row my-lg-5">
+                <div class="col-2">
+                    <i class="fa-solid fa-drumstick-bite text-warning"></i>
+                    <p class="text-white-50 ">Lorem ipsum dolor sit.</p>
+                </div>
+                <div class="col-2 mx-lg-5">
+                    <i class="fa-solid fa-burger text-warning"></i>
+                    <p class="text-white-50">Lorem ipsum dolor sit.</p>
+                </div>
+                <div class="col-2">
+                    <i class="fa-solid fa-hotdog text-warning"></i>
+                    <p class="text-white-50">Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+            <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?" href="">About us<i class="fa-solid fa-arrow-right-long px-2"></i></button>
+            </div>
+            <figure class="col text-end my-lg-5 py-lg-5" >
+                <img src="main-burger.png" alt="Some important img">
+            </figure>
+        </div>
+        <!--button-grop  -->
+        <div class="btn-group-vertical position-fixed" role="group" aria-label="Vertical button group"> 				
+            <button type="button" class="btn btn-secondary btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>	
+              <button type="button" class="btn btn-secondary my-2 btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
+                <i class="fa-solid fa-camera-retro"></i>
+              </button>
+              <button type="button" class="btn btn-secondary btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
+                <i class="fa-regular fa-image"></i>
+              </button>	
+            </div>
+    <!--  -->
+        </div>
+</header>
+<section class="four-burgers my-lg-5 py-lg-5">
+    <div class="container text-center">
+        <div class="row justify-content-center ">
+                <div class="col">
+         <p class="fs-4 text-uppercase fw-bold">Our Burgers</p>
+    <h1 class="fw-bold">UNLEASH YOUR BURGER CRAVINGS<br>WITH OUR MENU</h1></div>
+                </div> 
+                <div class="container-four-burgers">
+        <div class="row justify-content-around ">
+           
+              <div class="col-1">
+          <div class="picture position-relative">
+            <img src="product-1-480x480.png"  alt="Burger">
+            <div class="wrap-pic position-absolute">
+              <span class="badge text-secondary bg-white"><i class="fa-solid fa-heart fs-3"></i></span>
+               <span class="badge text-secondary bg-white"><i class="fa-solid fa-arrow-right fs-3"></i></span>
+              </div>
+          </div> 
+            <div class="note position-relative">
+              <div class="wrap-a position-absolute bg-white">
+                <span class="text-decoration-underline  fw-bold py-5">Buy now</span>
+              </div>
+              <a class="link-dark fs-5" href="">
+                <span class="text-nowrap">Chicken burger</span></a>
+               </div>
+                  </div>
+
+
+                  <div class="col-1">
+                    <div class="badge bg-danger position-absolute">
+                      <span>-10%</span>
+                    </div>
+                   <div class="picture position-relative">
+                    <div class="wrap-pic position-absolute">
+                      <span class="badge text-secondary bg-white"><i class="fa-solid fa-heart fs-3"></i></span>
+                       <span class="badge text-secondary bg-white"><i class="fa-solid fa-arrow-right fs-3"></i></span>
+                      </div>
+                    <img src="product-4-480x480.png" alt="Burger">
+                  </div> 
+                   <div class="note position-relative">
+                    <div class="wrap-a position-absolute bg-white">
+                      <span class="text-decoration-underline fw-bold py-5">Buy now</span>
+                    </div>
+                    <a class="link-dark fs-5" href="">
+                    <span class="text-nowrap">Black burger</span>
+                  </a> </div>
+                  </div>
+
+          <div class="col-1 ">
+       <div class="picture position-relative">
+        <div class="wrap-pic position-absolute">
+          <span class="badge text-secondary bg-white"><i class="fa-solid fa-heart fs-3"></i></span>
+           <span class="badge text-secondary bg-white"><i class="fa-solid fa-arrow-right fs-3"></i></span>
+          </div>
+        <img src="product-2-480x480.png" alt="Burger">
+      </div> 
+          <div class="note position-relative">
+            <div class="wrap-a position-absolute bg-white">
+              <span class="text-decoration-underline fw-bold py-5">Buy now</span>
+            </div>
+            <a class="link-dark fs-5" href="">
+            <span class="text-nowrap">Fish burger</span>
+          </a></div>  
+          </div>
+
+          <div class="col-1">
+           <div class="picture position-relative">
+            <img src="product-3-480x480.png" alt="Burger">
+            <div class="wrap-pic position-absolute">
+              <span class="badge text-secondary bg-white"><i class="fa-solid fa-heart fs-3"></i></span>
+               <span class="badge text-secondary bg-white"><i class="fa-solid fa-arrow-right fs-3"></i></span>
+              </div>
+          </div>
+         <div class="note position-relative"> 
+          <div class="wrap-a position-absolute bg-white">
+            <span class="text-decoration-underline fw-bold py-5">Buy now</span>
+          </div>
+          <a class="link-dark fs-5" href="">
+          <span class="text-nowrap">Beaf burger</span>
+        </a></div>  
+          </div>  
+        </div>
+        </div>
+        <button type="button" class="btn btn-danger btn-lg my-5" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?" href="">VISIT US<i class="fa-solid fa-arrow-right-long px-2"></i></button>
+  </section>
+
+  <section class="grid-section mx-5 my-5 py-lg-5">
+    <div class="container-fluid grid">
+      <div class="div1">
+        <img class="w-75" src="img-5-copyright.jpg" alt="food">
+      </div>
+      <div class="div2"> 
+        <h3>GOURMET BURGERS</h3>  
+ <h2>DELICIOUS BURGERS MADE FROM THE FRESHEST INGREDIENTS</h2>
+ <p>Nibh venenatis cras sed felis eget velit aliquet sagittis. Faucibus purus in massa tempor nec feugiat nisl pretium fusce.</p></div>
+      <div class="div3"> 
+        <img  class="w-75" src="img-4-copyright.jpg" alt="food">
+      </div>
+      </div>
+    </section>
+    <section class="onhover my-lg-5 py-lg-5">
+      <div class="d-flex flex-row justify-content-around">
+<div  class="flex-row-item"><img class="opacity-25" src="client-1-copyright.png" alt="pic-brand"></div>
+<div  class="flex-row-item"><img class="opacity-25" src="client-2-copyright.png" alt="pic-brand"></div>
+<div  class="flex-row-item"><img class="opacity-25" src="client-3-copyright.png" alt="pic-brand"></div>
+<div  class="flex-row-item"><img class="opacity-25" src="client-4-copyright.png" alt="pic-brand"></div>
+<div  class="flex-row-item"><img class="opacity-25" src="client-5-copyright.png" alt="pic-brand"></div>
+<div  class="flex-row-item"><img class="opacity-25" src="client-6-copyright.png" alt="pic-brand"></div>
+      </div>
+    </section>  
+    <section class="food-grid">
+      <div class="angry-grid">
+          <div id="item-0"><span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Ideal Choise"><img src="img-6-copyright.jpg" alt=""></span></div>
+          <div id="item-1"><img src="img-10-copyright-890x664.jpg" alt=""></div>
+          <div id="item-2"><img src="img-11-copyright-890x664.jpg" alt=""></div>
+          <div id="item-3"><img src="img-12-copyright-890x664.jpg" alt=""></div>
+          <div id="item-4"><img src="img-13-copyright-890x664.jpg" alt=""></div>
+        </div>
+</section>
+<section class="menu text-white">
+
+  <header class="text-center py-5">
+    <p class="fs-4 text-uppercase fw-bold">OUR MENU</p>
+    <h1 class="fw-bold">YOUR ONE-STOP BURGER SHOP</h1>
+   </header>
+<div class="d-flex justify-content-center ">
+  <div class="mx-lg-3 px-lg-3">
+  <ul>
+    <li class="list-group-item">
+      <h4><a class="text-white" href="https://easyeat.ancorathemes.com/services/classic-juicy-cheeseburger/">Classic Juicy Cheeseburger</a></h4><span>$12.00</span>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+              </li>
+    <li class="list-group-item">
+      <h4><a class="text-white" href="https://easyeat.ancorathemes.com/services/loaded-guacamole-burger/">Loaded Guacamole Burger</a>
+        </h4><span>$16.00</span>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+      </li>
+    <li class="list-group-item">
+      <h4><a class="text-white" href="https://easyeat.ancorathemes.com/services/mushroom-swiss-burger/">Mushroom Swiss Burger</a></h4>
+      <span>$10.00</span>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+    </li>
+    <li class="list-group-item"><h4><a class="text-white" href="https://easyeat.ancorathemes.com/services/teriyaki-pineapple-burger/">Teriyaki Pineapple Burger</a></h4>
+      <span>$12.00</span>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+    </li>
+    <li class="list-group-item"><h4><a class="text-white" href="https://easyeat.ancorathemes.com/services/buffalo-chicken-burger/">Buffalo Chicken Burger</a></h4>
+      <span>$14.00</span>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+    </li>
+  </ul>
+</div>
+<div class="mx-lg-3 px-lg-3" >
+  <ul>
+    <li class="list-group-item">
+      <h4 ><a class="text-white" href="https://easyeat.ancorathemes.com/services/double-bacon-cheeseburger/">Double Bacon Cheeseburger</a></h4>
+            <span>$16.00</span>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+          </li>
+    <li class="list-group-item">
+      <h4><a class="text-white" href="https://easyeat.ancorathemes.com/services/southwest-chicken-burger/">Southwest Chicken Burger</a></h4>
+          <span>$10.00</span>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+        </li>
+    <li class="list-group-item">
+      <h4><a class="text-white" href="https://easyeat.ancorathemes.com/services/double-cheeseburger-melt/">Double Cheeseburger Melt</a></h4>
+            <span>$14.00</span>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+ </li>
+    <li class="list-group-item">
+      <h4><a class="text-white" href="https://easyeat.ancorathemes.com/services/philly-cheesesteak-burger/">Philly Cheesesteak Burger</a></h4>
+          <span>$12.00</span>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+ </li>
+    <li class="list-group-item">
+      <h4><a class="text-white" href="https://easyeat.ancorathemes.com/services/blackened-chicken-burger/">Blackened Chicken Burger</a></h4>
+            <span>$12.00</span>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p></li>
+  </ul>
+		</div>
+  </div>
+</section>
+<section>
+  <div class="container-fluid french-fry  d-flex justify-content-between">
+    <div class="row"> 
+      <figure class="col text-end" >
+            <img src="burger-2.png" alt="Some important img">
+        </figure> </div>
+        <div class="col align-self-center justify-content-start text-white">
+          <span class="my-lg-3 fs-3 "> OUR DINER</span>
+            <h1 class="my-lg-3">WE MAKE THE BEST<br>BURGERS IN TOWN</h1>
+            <p class=" my-lg-3 w-75">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.natus error sit voluptatem accusantium doloremque laudantium.</p>
+        <p class="w-75 ">Veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas.
+
+        </p>
+            <a class="btn btn-danger btn-lg rounded-0 my-lg-4" href="">Lern More<i class="bi bi-arrow-right mx-2"></i></a>
+        </div>
+       </div>
+</section>
+
+<section class="clip">
+  
+<div class="container-fluid swiper-1">
+  <img src="img-115-copyright.jpg" alt="">
+</div>
+<div class="container-fluid swiper-2">
+  <img src="img-116-copyright.jpg" alt="">
+</div>
+
+
+<div class="f-video-container">
+  <div class="f-video-player">
+    <iframe width="315" height="315" src="https://www.youtube.com/embed/VsDtnTvgDB0?si=Or8cx0xM0s5ExvH2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  </div>
+</div>
+</section>
+<section class="container-fluid my-lg-5 py-lg-5 carousel">
+  
+  <div class="div text">
+   <p class="my-lg-3 fs-4 text-center"  >BLOG & ARTICLES</p> 
+    <h1 class="my-lg-3 text-center">LATEST NEWS</h1>
+  </div>
+ 
+
+
+  <div class="burger-carousel">
+     <div class="m-4 p-4"><div>
+        <img src="img-113-copyright-890x664.jpg" class="d-block w-100" alt="Sl1"></div>
+        <div>
+          <p>Snacks</p>
+          <h2>Some representative placeholder content for the first slide.</h2>
+          <span>Lorem ipsum dolor</span>
+        </div></div>
+    <div class="m-4 p-4"><div>
+        <img src="img-82-copyright-890x664.jpg" class="d-block w-100" alt="Sl2">
+      </div>
+        <div>
+          <p>Snacks</p>
+          <h2>Some representative placeholder content for the second slide.</h2>
+          <span>Lorem, ipsum dolor.</span>
+        
+        </div></div>
+
+   
+    <div class="m-4 p-4">
+      <div>
+        <img src="img-87-copyright-890x664.jpg" class="d-block w-100" alt="Sl3">
+      </div>
+        <div>
+          <p>Snacks</p>
+          <h2>Some representative placeholder content for the third slide.</h2>
+          <span>Lorem, ipsum dolor.</span>
+        </div></div>
+    <div class="m-4 p-4">
+      <div>
+        <img src="img-64-copyright-890x664.jpg" class="d-block w-100" alt="Sl4">
+      </div>
+        <div>
+          <p>Snacks</p>
+          <h2>Some representative placeholder content for the third slide.</h2>
+          <span>Lorem, ipsum dolor.</span>
+        </div></div>
+    
+</div>
+</div>
+</section>
+
+<section class="bg-warning form-section">
+
+  
+  <form class="row text-center">
+    <div class="col  my-lg-5 p-lg-5">
+    <h1>SUBSCRIBE FOR EXCLUSIVE<br>UPDATES AND HOT OFFERS!</h1>
+  </div>
+
+    <div class="col-3 my-lg-5 p-lg-5 text-start">
+      <input type="email" class="form-control rounded-0  py-3" id="exampleFormControlInput1" placeholder="name@example.com">
+      <input name="i_agree_privacy_policy" value="1" required="" type="checkbox" id="go1" class="inited">
+      <label class="text-white px-1" for="go1">I agree to the <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="/privacy-policy/" target="_blank">Privacy Policy</a>.</label>
+    </div>
+    <div class="col-3 my-lg-5 p-lg-5">
+      <button type="submit" class="btn btn-danger btn-lg  rounded-0 mb-3 px-5 py-3"><i class="fa-regular fa-paper-plane mx-2"></i>Subscribe</button>
+    </div>
+  </form>
+</section>
+<section class="pre-footer py-lg-5 text-white">
+  <div class="flex-container px-lg-5">
+   
+    <div class="item1 mx-lg-5 px-lg-5">
+      <h1 class="mx-lg-5 px-lg-5" >WE COOK ONLY THE MOST<br>DELICIOUS MEALS</h1></div>
+    <div class="item2">
+      <h3 class="fs-5">ADDRESS</h3>
+      <div> <span class="fs-6 opacity-50">Germany —</span></div>
+     <div><span class="fs-6 opacity-50">785 Street, Office 478</span></div>
+      <div><span class="fs-6 opacity-50">Berlin, De 81566</span></div>
+     
+       
+          <div class="socials_wrap my-5">
+            <a target="_blank" href="https://www.facebook.com/AncoraThemes/" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons "><span class="social_icon social_icon_facebook-1">
+              <i class="fa-brands fa-facebook-f"></i> </a>
+              <a target="_blank" href="https://twitter.com/themes_ancora" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons">
+               
+                <i class="fa-brands fa-twitter"></i> </a>
+                  <a target="_blank" href="https://dribbble.com/AncoraThemes" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons">
+                    
+                    <i class="fa-brands fa-dribbble"></i>  </a>
+                      <a target="_blank" href="https://www.instagram.com/ancora_themes/" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons">
+                        <i class="fa-brands fa-instagram"></i></a>
+                      </div>
+      
+    </div>
+    <div class="item3">
+      <h3 class="fs-5">SAY HELLO</h3>
+      <div><a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">info@email.com</a></div>
+   <div><a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="tel:+1%20840%20841%2025%2069">+1 840 841 25 69</a></div>
+   
+    </div>
+
+</div>
+
+</section>
+<footer>
+  <div class="flex-footer text-white mx-lg-5 px-lg-5">
+  
+    <div class="f-item1 opacity-50"><h3 class="fs-5">OUR BLOG</h3></div>
+    <div class="f-item2 opacity-50"><h3  class="fs-5">ABOUT US</h3></div>
+    <div class="f-item3 opacity-50"><h3  class="fs-5">CONTACTS</h3></div>
+ 
+    <div class="f-item4 opacity-50"><a href="https://ancorathemes.com/">AncoraThemes</a><span>© 2023. All Rights Reserved.</span></div>
+
+</div>
+<a  class="bg-danger text-center" href="#link-start"><i class="fa-solid fa-arrow-up text-white "></i></a>
+</footer>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+<script src="index.js"></script>
+<script src="package.json"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+<script src="carousel.js"></script>
+</body>
+</html>

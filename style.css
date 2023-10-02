@@ -1,0 +1,432 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{width: 100vw;
+z-index: 9;}
+
+header .container-fluid {
+    height: 100vh;
+    background-color: orange;
+    background-image: url(decoration-bg-1.png);
+    background-size:auto;
+    background-repeat: no-repeat;
+}
+.navbar .item1{
+    position: relative;
+}
+ .navbar .badge{
+    position: absolute;
+    right: 2%;
+    top: 55%;
+  }
+  .nav-container h1{
+    font-size:3.3vw;
+    line-height: 1.2em;
+    font-weight: bold;
+
+  } 
+  .nav-container img{
+  transition: all 1s ease;  
+  }
+  .nav-container img:hover{
+    transform: scale(110%) rotate(10deg);
+  }
+
+ @media (max-width:1035px){
+  .nav-container figure {
+display: none;
+    }
+    .nav-container .row .align-self-center{
+        font-size: 1em;
+        margin:20% 20%;
+    }
+    .nav-container .food-icons i{
+        margin-right: 3em;
+    }
+}
+@media(max-width:940px){
+    .nav-container .align-self-center {
+    margin-top: 40%;
+    }
+    .nav-container .food-icons i{
+        margin-right: 6em;
+    }
+}
+@media(max-width:625px){
+    .nav-container .align-self-center {
+        margin-top: 70%;
+        }
+    .nav-container .food-icons i{
+        margin-right: 8em;
+    }
+}
+
+  .nav-container .col-2 i{
+   font-size: 6em;
+  }
+  header .btn-group-vertical{
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 50%;
+  }
+  header h1{ 
+    font-size: 3em;
+}
+.row .col-2 i{
+    transition: all 1s ease;
+}
+.row .col-2 i:hover{
+    color:chocolate !important;
+}
+
+.four-burgers .container-four-burgers{
+    margin-left: -20%;
+    
+}
+
+.four-burgers img{
+    width: 20vw;
+    height:20vw;
+}
+.post_data{
+    text-align: center !important;
+}
+.four-burgers a{
+    text-decoration: none;
+    margin-left: 5em;
+    
+}
+
+.four-burgers .picture{
+    width:200%;
+    
+}
+.four-burgers .picture:hover .wrap-pic{
+display: block;
+}
+.four-burgers .wrap-pic{
+    display: none;
+    top:50%;
+    left: 50%;
+}
+
+.four-burgers .wrap-a{
+display: none;
+    width: 5em;
+    height: 3em;
+    top:100%;
+    left: 100%;
+    transition: 1s all ;
+}
+@media (max-width:1290px){
+    .four-burgers .note{
+margin-left: -40%;
+    }
+}
+@media (max-width:1300px){
+    .four-burgers {
+width: 70%;
+margin-left: 10%;
+
+
+    }
+}
+.four-burgers:hover .wrap-a{
+    display:block;
+  animation: bounce 0.65s forwards linear;
+}
+@keyframes bounce {
+  0%   { top:100%; }
+  50%  { top:70%; }
+  100% { top:5%; }
+}
+.grid-section .grid{
+    margin-left: 3em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap:10px;
+        grid-row-gap: 1em;
+        }
+        
+        .div1 { grid-area: 1 / 1 / 4 / 2; }
+        .div2 { grid-area: 1 / 2 / 2 / 3; }
+        .div3 { grid-area: 2 / 2 / 4 / 3; }
+
+ .onhover .flex-row-item img:hover{
+     opacity:100% !important;
+    }
+@media(max-width:1140px){
+    .onhover .d-flex{
+        margin-top: -30%;
+        margin-left: 5%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;}
+        .onhover  .flex-row-item {
+            flex: 1 1 30%;
+            height: 100px; 
+}
+   
+}
+@media(max-width:550px){
+    .onhover .d-flex{
+        margin-top: -130%;}
+    }
+
+    .angry-grid {
+        display: grid; 
+     
+        grid-template-rows:1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
+        
+        gap: 0px;
+        
+        
+     }
+     
+     .angry-grid img{width: 100%;height: 100%;}
+       
+     #item-0 {
+     
+    
+        grid-row-start: 1;
+        grid-column-start: 1;
+     
+        grid-row-end: 3;
+        grid-column-end: 2;
+        
+     }
+     #item-1 {
+     
+     
+        grid-row-start: 1;
+        grid-column-start: 2;
+     
+        grid-row-end: 2;
+        grid-column-end: 3;
+        
+     }
+     #item-2 {
+     
+       
+        grid-row-start: 1;
+        grid-column-start: 3;
+     
+        grid-row-end: 2;
+        grid-column-end: 4;
+        
+     }
+     #item-3 {
+     
+      
+        grid-row-start: 2;
+        grid-column-start: 2;
+     
+        grid-row-end: 3;
+        grid-column-end: 3;
+        
+     }
+     #item-4 {
+     
+   
+        grid-row-start: 2;
+        grid-column-start: 3;
+     
+        grid-row-end: 3;
+        grid-column-end: 4;
+        
+     }
+    .angry-grid div {
+        display: inline-block; 
+        overflow: hidden; 
+       }
+       .angry-grid  div img {
+        display: block; 
+        transition: 1s; 
+       }
+       .angry-grid  div img:hover {
+        transform: scale(1.2);
+       }
+       .menu{
+        background-color: orange;
+        background-image: url(decoration-bg-4.png);
+        height: 100vh;
+    background-size:auto;
+    background-repeat:no-repeat;
+       }
+       .menu a{
+        text-decoration: none;
+       }
+       .french-fry{
+        background-color: orange;
+       }
+    
+       .french-fry h1{
+        font-size: 3.5em;
+       }
+       .french-fry span,
+       .french-fry h1{
+         font-family: 'Bebas Neue', sans-serif;
+       }
+       .clip {
+        overflow: hidden !important;
+        height: 99vh;
+        background-color: black;
+      
+       }
+      .clip .swiper-1,
+      .clip .swiper-2{
+         overflow: hidden !important ; 
+         
+      }
+       .clip img{
+       width: 100vw; 
+       height: 100vh;
+     
+       }
+      .clip .swiper-1{
+       position: absolute;
+      animation: bigger 5s ease-in-out infinite;animation-duration: 3s;
+    }
+    .clip .swiper-2{
+    position: absolute;
+    z-index: -1;
+    animation: change 8s ease-in-out  infinite,bigger 8s ease-in-out infinite; 
+    animation-delay:8s 4s; 
+     
+        
+       }
+       @keyframes bigger{
+        0%{transform: scale(0.9);}
+        100%{transform: scale(1);}
+       }
+       
+       @keyframes change{
+        from{z-index: -1;}
+        to{z-index: 2;}
+       }
+       .f-video-container{position: relative;}
+      .f-video-player{
+        position: absolute;
+        z-index: 3;
+        margin-top: 20%;
+        margin-left: 40%;
+     
+    }
+.carousel {
+    font-family: 'Bebas Neue', sans-serif;
+        }
+.text h1{font-size: 3.5em;}
+
+.burger-carousel  div img {
+    
+    transition: 1s !important; 
+   }
+        .burger-carousel div img:hover{
+            transform: scale(1.01);
+            } 
+        
+ .form-section h1,
+ .form-section button{
+    font-family: 'Bebas Neue', sans-serif;
+ } 
+ .form-section h1{
+    font-size: 3em;}
+ .form-section button{
+    position: relative;
+    left:-40%
+ }
+ .form-section #exampleFormControlInput1{
+    width: 20vw;
+    height:7vh ;
+ }
+ .flex-container {
+    display: flex;
+    height: 100%;
+    padding: 15px;
+    gap: 5px;
+  }
+
+  .flex-container > div{
+  padding: 8px;
+  }
+
+
+  .item1 { 
+   flex-grow:2;
+  }
+			
+  .item2 { 
+  flex-grow:1;
+  }
+			
+  .item3 { 
+   flex-grow:2;
+  }
+
+.pre-footer{
+  
+    background-image: url(decoration-bg-2.png);
+}
+.pre-footer h1,
+.pre-footer h3{
+    font-family:'Bebas Neue', sans-serif;
+ }   
+ .socials_wrap a{
+    text-decoration: none;
+    color: white;
+    margin-right: 5px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.511);
+    
+ }  
+ .pre-footer .fa-facebook-f:hover{
+    color:blue !important;
+ }
+ .pre-footer .fa-twitter:hover{
+    color:rgba(71, 134, 228, 0.954)!important;
+ }
+ .pre-footer .fa-dribbble:hover{
+    color:pink !important;
+ }
+ .pre-footer .fa-instagram:hover{
+    color:violet !important;
+ }
+ footer{
+    background-image: url(decoration-bg-6.png);
+    border-top: 1px solid rgba(255, 255, 255, 0.498);
+ }
+ .flex-footer {
+
+    display: flex;
+    height: 100%;
+    padding: 15px;
+    gap: 5px;
+
+  }
+
+  .flex-footer > div{
+    padding: 8px;
+  }
+
+
+  .f-item4 { 
+    flex-grow:2;
+   text-align: end;
+  }
+  .f-item4 a{
+    text-decoration: none;
+color: white;}
+   
+.flex-footer h3 {
+    font-family:'Bebas Neue', sans-serif;}
+    footer .bg-danger{
+        width: 50px;
+        height: 50px;
+        padding-top: 13px;
+        position: fixed;
+        bottom: 5%;
+        right: 2%;
+    }
