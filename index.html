@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,8 +23,8 @@
 <body> 
     <header>
     <nav class="navbar navbar-dark bg-dark navbar-expand position-fixed">
-        <div class="container ">
-            <a class="navbar-brand" href="#"><img src="logo.png" alt=""></i></a>
+        <div itemscope itemtype="https://schema.org/Hotel" class="container ">
+            <a class="navbar-brand" href="#"><img itemprop="logo" src="logo.png" alt=""></i></a>
             
               <div class="collapse navbar-collapse justify-content-between" id="main-navigation">
         <ul class="navbar-nav mx-lg-5">
@@ -78,7 +79,7 @@
         <div class="row">
             <div class="col align-self-center">
                 <p class="fs-4 text-white">ABOUT US</p>
-                <h1 class="text-white">UNFORGETTABLE BURGERS,<br>UNFORGETTABLE MEMORIES</h1>
+                <h1 itemprop="description" class="text-white">UNFORGETTABLE BURGERS,<br>UNFORGETTABLE MEMORIES</h1>
             
             <div class="food-icons row my-lg-5">
                 <div class="col-2">
@@ -97,7 +98,7 @@
             <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?" href="">About us<i class="fa-solid fa-arrow-right-long px-2"></i></button>
             </div>
             <figure class="col text-end my-lg-5 py-lg-5" >
-                <img src="main-burger.png" alt="Some important img">
+                <img  itemprop="photo"  src="main-burger.png" alt="Some important img">
             </figure>
         </div>
         <!--button-grop  -->
@@ -440,16 +441,31 @@
 <footer>
   <div class="flex-footer text-white mx-lg-5 px-lg-5">
   
-    <div class="f-item1 opacity-50"><h3 class="fs-5">OUR BLOG</h3></div>
-    <div class="f-item2 opacity-50"><h3  class="fs-5">ABOUT US</h3></div>
-    <div class="f-item3 opacity-50"><h3  class="fs-5">CONTACTS</h3></div>
+    <div class="f-item1"><a class="item-a" href=""><h3 class="fs-5 opacity-50">OUR BLOG</h3></a></div>
+    <div class="f-item2"><a class="item-a" href=""><h3  class="fs-5 opacity-50">ABOUT US</h3></a></div>
+    <div class="f-item3"><a class="item-a" href=""><h3  class="fs-5 opacity-50">CONTACTS</h3></a></div>
  
     <div class="f-item4 opacity-50"><a href="https://ancorathemes.com/">AncoraThemes</a><span>© 2023. All Rights Reserved.</span></div>
 
 </div>
 <a  class="bg-danger text-center" href="#link-start"><i class="fa-solid fa-arrow-up text-white "></i></a>
+<button class="open-button" onclick="openForm()"><i class="fa-solid fa-message fs-5 my-1"></i></button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Hi there</h1>
+    <h4>Welcome to our Chat.</h4>
+      <h4>Ask us anything </h4> 
+    <label for="msg"><b>We reply immediately</b></label>
+    <textarea placeholder="Enter your message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn submit">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
 </footer>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="form.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
 <script src="index.js"></script>
