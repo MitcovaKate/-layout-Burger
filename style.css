@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -299,8 +302,8 @@ margin-left: 10%;
         
        }
        @keyframes bigger{
-        0%{transform: scale(0.9);}
-        100%{transform: scale(1);}
+        0%{transform: scale(1);}
+        100%{transform: scale(1.1);}
        }
        
        @keyframes change{
@@ -421,7 +424,11 @@ margin-left: 10%;
 color: white;}
    
 .flex-footer h3 {
-    font-family:'Bebas Neue', sans-serif;}
+    font-family:'Bebas Neue', sans-serif;
+}
+.flex-footer h3:hover {
+   opacity: 1 !important;
+}
     footer .bg-danger{
         width: 50px;
         height: 50px;
@@ -430,3 +437,98 @@ color: white;}
         bottom: 5%;
         right: 2%;
     }
+
+    footer .item-a{position: relative;
+	color: white;
+	cursor: pointer;
+	line-height: 1; 
+	text-decoration: none;}
+    footer .item-a:after {
+            display: block;
+            position: absolute;
+            left: 0; 
+            width: 0;
+            height: 2px; 
+            background-color: white;
+            content: "";
+            transition: width 0.3s ease-out; }
+        
+        .item-a:hover:after,
+        .item-a:focus:after {
+            width: 100%;
+        }
+        .open-button {
+            background-color: greenyellow;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 40px;
+            left: 25px;
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+          }
+          
+          .chat-popup {
+            background-color: rgba(89, 180, 89, 0.742);
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+            border-radius: 5%;
+          }
+          
+         
+          .form-container {
+            border-radius: 15%;
+            max-width: 300px;
+            padding: 10px;
+            background-color: rgba(135, 215, 49, 0.818);
+          }
+          .form-container h1, .form-container h4{
+            color: darkslategray;
+          }
+        
+          .form-container textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #e2f0e7;
+            resize: none;
+            min-height: 100px;
+          }
+          .form-container textarea:focus {
+            background-color: #ddd;
+            outline: none;
+          }
+          
+          .form-container .btn {
+            background-color: #e1eae6;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom:10px;
+            opacity: 0.8;
+          }
+          
+          .form-container .submit{
+            background-color: forestgreen;
+          }
+          .form-container .cancel {
+            background-color: rgba(220, 52, 52, 0.822);
+          }
+
+          
+          
+          .form-container .btn:hover, .open-button:hover {
+            opacity: 1;
+          }
+    
